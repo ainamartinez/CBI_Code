@@ -44,18 +44,20 @@ This program provides us with information about the consumption of a regular hom
 Due to the vast amount of data and in order to process it faster, we'll take first `15000 lines` to visualize information on Grafana. During the process, we've realized that it's not our type of consumption, we won't keep with this data. You might find the data visualization [here]().
 
 - ### [Our provisional Data](./files/dataCons.csv): 
-Since we depend on hardware and software construction to get our prototype's data and it's not ready yet, we've created some [Python programs](./src/dataBase_creator.py) that provide a `CSV` with data about 10 rooms. The data is based on hourly probabilities to add water consumption. It measures water usage from June 1, 2024, to June 18, 2024, and records measurements every 15 minutes to better fit our interests. You can find the data visualization [here](https://ainamartinez.grafana.net/public-dashboards/06d7f1a2a7474070bc641f70e3ad5eb2)
+Since we depend on hardware and software construction to get our prototype's data and it's not ready yet, we've created some [Python programs](./src/dataBase_creator.py) that provide a `CSV` with data about 10 rooms. The data is based on hourly probabilities to add water consumption. It measures water usage from June 1, 2024, to June 18, 2024, and records measurements every 15 minutes to better fit our interests. You can find the data visualization depending on the aplication:
+1. [For hotel rooms](https://ainamartinez.grafana.net/public-dashboards/06d7f1a2a7474070bc641f70e3ad5eb2) and it's [data in CSV](./files/dataCons_Hotel.csv)
+2. [For gym users]()
 
 - ### Our real data: 
 We will use an Arduino to simulate water consumption in different rooms. This setup allows us to monitor water usage in real-time with Grafana, utilizing InfluxDB for data storage. See this example [here](https://example.com/arduino-grafana-influxdb) and this [blog](https://aprendiendoarduino.wordpress.com/2019/10/30/grafana-y-arduino/)
 # Web/App
 The Web/App component of our project aims to provide users with an interactive platform where they can monitor their water consumption, receive tips and tricks for water conservation, and participate in gamification activities to encourage water-saving behaviors.
 
-The app will display real-time data processed from Grafana, allowing users to see their consumption patterns and compare their usage with others. Additionally, the app will feature a system to manage incentives and rewards for top savers, along with a dedicated section for project updates and water-saving information.
+The app will display real-time data processed from Grafana, allowing users to see their consumption patterns and compare their usage with others. Additionally, the web will feature a system to manage incentives and rewards for top savers, along with a dedicated section for project updates and water-saving information.
 
-[Flutter](https://flutter.dev/), a UI toolkit developed by Google, is an excellent choice for building this Web/App due to its ability to create natively compiled applications for mobile, web, and desktop from a single codebase. This ensures a consistent and high-performance user experience across all platforms.
+[React](https://reactjs.org/), a JavaScript library developed by Facebook, is an excellent choice for building this Web/App due to its component-based architecture and efficient rendering capabilities. React allows developers to create reusable UI components, ensuring a consistent and high-performance user experience across web and mobile platforms when combined with React Native.
 
-# Next Steps (updated 18 November)
+# Next Steps (updated 19 November)
 We are already getting used to Grafana to visualize data from a CSV, but we would like to improve our knowledge about it. Since the real idea is to get real-time information and we are not sure if we will have the possibility, we will look for a way to do it (likely with InfluxDB). 
 
 Next steps include:
@@ -85,7 +87,8 @@ Next steps include:
 - Course instructors and coaches for their support and collaboration.
 # Authors
 
-- Aina [GitHub Profile](https://github.com/yourusername)
+- Aina Martinez [GitHub Profile](https://github.com/ainamartinez)
+- Judit Lacort [GitHub Profile](https://github.com/Laacort)
 - Collaborators [GitHub Profile](https://github.com/collaboratorusername)
 
 # Contact

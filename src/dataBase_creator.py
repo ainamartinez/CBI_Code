@@ -3,10 +3,10 @@ import random
 from datetime import datetime, timedelta
 
 # Define the file name
-file_name = './files/dataCons.csv'
-
-# We define colum names
-columns = ['Date', 'Room 1', 'Cons1', 'Room 2', 'Cons2', 'Room 3', 'Cons3','Room 4', 'Cons4', 'Room 5', 'Cons5', 'Room 6', 'Cons6', 'Room 7', 'Cons7', 'Room 8', 'Cons8', 'Room 9', 'Cons9', 'Room 10', 'Cons10']
+file_name = './files/dataCons_Hotel.csv'
+columns = ['Date']
+for i in range(10):
+    columns.extend([f'Room{i+1}', f'Cons{i+1}'])
 
 # Open the file in write mode
 with open(file_name, mode='w', newline='') as file:
@@ -34,7 +34,7 @@ with open(file_name, mode='a', newline='') as file:
             if 1 <= date.hour < 7 or (date.hour == 7 and date.minute < 30): #We consider that the rooms DON'T consume water between 1:00 and 7:30
                 is_open = 0
             else:
-                if 7 <= date.hour < 11 or 20 <= date.hour < 23:
+                if 7 <= date.hour < 11 or 20 <= date.hour < 23 or 13 <= date.hour < 15: #We consider that the rooms consume water between 7:30 and 11:00, 13:00 and 15:00, and 20:00 and 23:00
                     is_open = random.choices([0, 1], weights=[0.8, 0.2])[0] # 20% chance of no water consumption, 80% chance of water consumption
                 else:
                     is_open = random.choices([0, 1], weights=[0.95, 0.05])[0] # 80% chance of no water consumption, 20% chance of water consumption
@@ -43,7 +43,7 @@ with open(file_name, mode='a', newline='') as file:
                 consumption = 0
             else:
                 if 7 <= date.hour < 11 or 20 <= date.hour < 23:
-                    if random.choices([0, 1], weights=[0.9, 0.1])[0] == 1:
+                    if random.choices([0, 1], weights=[0.90, 0.1])[0] == 1:
                         consumption = round(random.gauss(160, 0.05), 2)
                     else:
                         consumption = round(random.gauss(1.5, 0.1), 2)

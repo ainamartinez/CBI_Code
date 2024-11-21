@@ -57,6 +57,9 @@ The app will display real-time data processed from Grafana, allowing users to se
 
 [React](https://reactjs.org/), a JavaScript library developed by Facebook, is an excellent choice for building this Web/App due to its component-based architecture and efficient rendering capabilities. React allows developers to create reusable UI components, ensuring a consistent and high-performance user experience across web and mobile platforms when combined with React Native.
 
+## Digital prototype
+
+To follow the process of creating the web, we start by doing a digital prototype with [Figma](https://www.figma.com/) tool. We aim to express our initiative with a minimalist website that incentivizes users and encourages them to take part in the initiative, especially through the ranking and reward sections.
 # Next Steps (updated 19 November)
 We are already getting used to Grafana to visualize data from a CSV, but we would like to improve our knowledge about it. Since the real idea is to get real-time information and we are not sure if we will have the possibility, we will look for a way to do it (likely with InfluxDB). 
 
@@ -80,7 +83,32 @@ Next steps include:
     - Create an interface for gamification and progress tracking. We are thinking about hiring services from 
     - Implement a system to manage incentives. We might consideer [Factual Consulting](https://factual-consulting.com/microincentives-sustainable-mobility-europe) to manage it.
     - Provide information about the project, water-saving tips, and important updates within the app.
+5. **From checkpoint presentation feedback**
+    - Try to figure out the "story" from the user point of view
+    - Verify reward system
+    - Describe `what` data will be shown on hotel monitors
+    - Think about prediction on leakage
+    - Sell it to the end user
 
+# How will both projects collaborate?
+
+We have brainstormed new ideas to find common ground where both projects can align and offer mutual benefits:
+
+1. **Gamification and Rewards**:
+    - Gym members could earn rewards such as breakfast or dinner at participating hotels.
+    - Hotel guests could access gym facilities, such as pools or saunas, if their hotel lacks these amenities. They could also use other facilities like bathrooms or drinkable water stations.
+
+2. **Web/App Integration**:
+    - The Web/App will feature a map where users can find places to earn rewards, helping them understand exactly what benefits they can receive.:
+
+        - For gym member: It's beneficial to have an accessible way to know what rewards are available nearby. For instance, gym members could easily find out if they can get a free breakfast at a nearby hotel or access to a hotel's swimming pool.
+        - For Tourists: Upon checking in, tourists could receive suggestions such as:
+            1. Enjoy a free breakfast on your last day.
+            2. Access the gym's swimming pool with a view of the sea tomorrow morning.
+            3. Get a complimentary dinner at a partner restaurant during your stay.
+    - Users can invite friends to participate, enhancing the experience and increasing engagement. For example, gym members could invite (foreing) firends or family to stay at partner hotels, and hotel guests could be encouraged to use nearby gym facilities.
+
+These initiatives aim to create a seamless experience for users, encouraging water-saving behaviors while providing tangible benefits and fostering collaboration between gyms and hotels.
 # Acknowledgments
 
 - Aigües de Barcelona for providing the data and challenge.

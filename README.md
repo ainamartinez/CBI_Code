@@ -13,12 +13,24 @@ This repository contains the code for the Course Based in Innovation (CBI). The 
 - [Contact](#contact)
 
 # Project Overview
-We do have 2 misions:
+CBI is a course where multidisciplinary teams collaborate to present innovative solutions based on the Sustainable Development Goals (SDGs). In our case, Aigües de Barcelona was in charge of giving us a mission.
+
+This code is a collaboration between some of the engineering members in two different teams.
+Both teams decided to collaborate since their solutions might have a very similar software part.
+The collaboration can be summarized in the following two tasks:
+
 1. Develop the software to show though a Dashboard informations about water consumption associated to a user (p.e., Gym owner, Hotel owners, and so on). See [Dashboard Visualization](#dashboard-visualization)
 2. Develop the software for a Web/App which informs clients (users) and gives then tricks, extra informations, maybe gamification and incenties. See [Web/App](#webapp)
 
+## Team 2 Focus on hospitality sector
+Team 2 is focusing mainly on the hospitality sector, specifically hotels. The solution is a dual approach aimed at encouraging tourists to consume less water during their stay and reducing costs while improving water savings for hotels.
+
+To achieve this, we've thought about implementing a metering system that allows us to measure water consumption in each room. This system will help motivate guests by creating a ranking based on their water usage and providing rewards depending on their behavior.
+
+## Team 4 Focus on gyms (to be written)
+
 # Getting Started
-If you want to see more about it, you must follow this steps:
+If you want to download this repository you must follow this steps:
 
 1. Clone the repository:
     ```bash
@@ -60,6 +72,9 @@ The app will display real-time data processed from Grafana, allowing users to se
 ## Digital prototype
 
 To follow the process of creating the web, we start by doing a digital prototype with [Figma](https://www.figma.com/) tool. We aim to express our initiative with a minimalist website that incentivizes users and encourages them to take part in the initiative, especially through the ranking and reward sections.
+
+## React website
+To develop the app, as mentioned before, we'll use React. You can find all the process and related code in another repository: [CBI_Web](https://github.com/ainamartinez/CBI_Web).
 # Next Steps (updated 19 November)
 We are already getting used to Grafana to visualize data from a CSV, but we would like to improve our knowledge about it. Since the real idea is to get real-time information and we are not sure if we will have the possibility, we will look for a way to do it (likely with InfluxDB). 
 
@@ -97,6 +112,7 @@ We have brainstormed new ideas to find common ground where both projects can ali
 1. **Gamification and Rewards**:
     - Gym members could earn rewards such as breakfast or dinner at participating hotels.
     - Hotel guests could access gym facilities, such as pools or saunas, if their hotel lacks these amenities. They could also use other facilities like bathrooms or drinkable water stations.
+    - Maybe we should think about a new "way" gamification and implement some live "now" rewards. Something that's done at the moment. Also, consider the idea of internal competition.
 
 2. **Web/App Integration**:
     - The Web/App will feature a map where users can find places to earn rewards, helping them understand exactly what benefits they can receive.:

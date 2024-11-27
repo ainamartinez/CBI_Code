@@ -7,7 +7,6 @@ This repository contains the code for the Course Based in Innovation (CBI). The 
 - [Project Overview](#project-overview)
 - [Getting Started](#getting-started)
 - [Dashboard Visualization](#dashboard-visualization)
-- [Web/App](#webapp)
 - [Acknowledgments](#acknowledgments)
 - [Authors](#authors)
 - [Contact](#contact)
@@ -20,7 +19,7 @@ Both teams decided to collaborate since their solutions might have a very simila
 The collaboration can be summarized in the following two tasks:
 
 1. Develop the software to show though a Dashboard informations about water consumption associated to a user (p.e., Gym owner, Hotel owners, and so on). See [Dashboard Visualization](#dashboard-visualization)
-2. Develop the software for a Web/App which informs clients (users) and gives then tricks, extra informations, maybe gamification and incenties. See [Web/App](#webapp)
+2. Develop the software for a Web/App which informs clients (users) and gives then tricks, extra informations, maybe gamification and incenties. See [Web/App github repository](https://github.com/ainamartinez/CBI_Web)
 
 ## Team 2 Focus on hospitality sector
 Team 2 is focusing mainly on the hospitality sector, specifically hotels. The solution is a dual approach aimed at encouraging tourists to consume less water during their stay and reducing costs while improving water savings for hotels.
@@ -57,24 +56,12 @@ Due to the vast amount of data and in order to process it faster, we'll take fir
 
 - ### [Our provisional Data](./files/dataCons.csv): 
 Since we depend on hardware and software construction to get our prototype's data and it's not ready yet, we've created some [Python programs](./src/dataBase_creator.py) that provide a `CSV` with data about 10 rooms. The data is based on hourly probabilities to add water consumption. It measures water usage from June 1, 2024, to June 18, 2024, and records measurements every 15 minutes to better fit our interests. You can find the data visualization depending on the aplication:
-1. [For hotel rooms](https://ainamartinez.grafana.net/public-dashboards/06d7f1a2a7474070bc641f70e3ad5eb2) and it's [data in CSV](./files/dataCons_Hotel.csv)
+1. [For hotel rooms](https://ainamartinez.grafana.net/public-dashboards/06d7f1a2a7474070bc641f70e3ad5eb2) and it's [data in CSV](./files/dataCons_Hotel.csv) *Note that you must set data as you desire but inside the range of time between 1st June 2024 to 18th June 2024
 2. [For gym users]()
 
 - ### Our real data: 
-We will use an Arduino to simulate water consumption in different rooms. This setup allows us to monitor water usage in real-time with Grafana, utilizing InfluxDB for data storage. See this example [here](https://example.com/arduino-grafana-influxdb) and this [blog](https://aprendiendoarduino.wordpress.com/2019/10/30/grafana-y-arduino/)
-# Web/App
-The Web/App component of our project aims to provide users with an interactive platform where they can monitor their water consumption, receive tips and tricks for water conservation, and participate in gamification activities to encourage water-saving behaviors.
+Due to lack of time, we won't be able to implement the software to get real data from prorotypes. However, we will try to work with InfluxDB and get "real time" self-generated data so the experience is more inmersive
 
-The app will display real-time data processed from Grafana, allowing users to see their consumption patterns and compare their usage with others. Additionally, the web will feature a system to manage incentives and rewards for top savers, along with a dedicated section for project updates and water-saving information.
-
-[React](https://reactjs.org/), a JavaScript library developed by Facebook, is an excellent choice for building this Web/App due to its component-based architecture and efficient rendering capabilities. React allows developers to create reusable UI components, ensuring a consistent and high-performance user experience across web and mobile platforms when combined with React Native.
-
-## Digital prototype
-
-To follow the process of creating the web, we start by doing a digital prototype with [Figma](https://www.figma.com/) tool. We aim to express our initiative with a minimalist website that incentivizes users and encourages them to take part in the initiative, especially through the ranking and reward sections.
-
-## React website
-To develop the app, as mentioned before, we'll use React. You can find all the process and related code in another repository: [CBI_Web](https://github.com/ainamartinez/CBI_Web).
 # Next Steps (updated 19 November)
 We are already getting used to Grafana to visualize data from a CSV, but we would like to improve our knowledge about it. Since the real idea is to get real-time information and we are not sure if we will have the possibility, we will look for a way to do it (likely with InfluxDB). 
 
